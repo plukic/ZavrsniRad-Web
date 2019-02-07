@@ -1,0 +1,36 @@
+
+<log>
+	Date: 10/2/2018 7:11:05 AM
+	Message: The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/2/2018 7:11:09 AM
+	Message: The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/2/2018 7:11:10 AM
+	Message: The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/2/2018 10:23:22 AM
+	Message: The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+	Details: 
+	Url: /access/sign-out/
+	User: ::1
+	Browser: Chrome
+</log>

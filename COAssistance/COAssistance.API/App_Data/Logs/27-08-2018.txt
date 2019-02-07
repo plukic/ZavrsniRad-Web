@@ -1,0 +1,36 @@
+
+<log>
+	Date: 27.08.2018. 12:51:31
+	Message: 'helprequest' Hub could not be resolved.
+	Details: 
+	Url: /coa/signalr/negotiate?clientProtocol=1.5&connectionData=%5B%7B%22name%22%3A%22helprequest%22%7D%5D&_=1535374290934
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 27.08.2018. 12:53:35
+	Message: 'helprequest' Hub could not be resolved.
+	Details: 
+	Url: /coa/signalr/negotiate?clientProtocol=1.5&connectionData=%5B%7B%22name%22%3A%22helprequest%22%7D%5D&_=1535374406464
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 27.08.2018. 12:54:25
+	Message: 'helprequest' Hub could not be resolved.
+	Details: 
+	Url: /coa/signalr/negotiate?clientProtocol=1.5&connectionData=%5B%7B%22name%22%3A%22helprequest%22%7D%5D&_=1535374457466
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 27.08.2018. 12:57:31
+	Message: 'helprequest' Hub could not be resolved.
+	Details: 
+	Url: /coa/signalr/negotiate?clientProtocol=1.5&connectionData=%5B%7B%22name%22%3A%22helprequest%22%7D%5D&callback=jQuery3310028354621664746116_1535374650728&_=1535374650729
+	User: ::1
+	Browser: Chrome
+</log>

@@ -1,0 +1,27 @@
+
+<log>
+	Date: 24.08.2018. 13:00:48
+	Message: A task was canceled.
+	Details: 
+	Url: /coa/token
+	User: 192.168.88.52
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 24.08.2018. 13:00:48
+	Message: A task was canceled.
+	Details: 
+	Url: /coa/token
+	User: 192.168.88.52
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 24.08.2018. 13:01:45
+	Message: A task was canceled.
+	Details: 
+	Url: /coa/token
+	User: 192.168.88.52
+	Browser: Unknown
+</log>

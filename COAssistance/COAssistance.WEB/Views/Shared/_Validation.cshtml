@@ -1,0 +1,6 @@
+﻿@model string
+@Scripts.Render("~/bundles/js/validation")
+<script>
+    // Enables jquery validation on ajax requests.
+    $.validator.unobtrusive.parse($('#@Model'));
+</script>

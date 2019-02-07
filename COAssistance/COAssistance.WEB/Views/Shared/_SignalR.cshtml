@@ -1,0 +1,21 @@
+﻿@{
+    var signalRUrl = System.Configuration.ConfigurationManager.AppSettings["SignalR.Url"];
+    var hubName = System.Configuration.ConfigurationManager.AppSettings["SignalR.Hub"];
+}
+<script>    
+    var connection = $.hubConnection('@signalRUrl', { useDefaultPath: false });
+    var hubProxy = connection.createHubProxy('@hubName');
+
+    hubProxy.on('OnNewHelpRequest', function (model) {
+        var message = '@Resource.HelpRequestNotificationMessage';
+        var url = '@Url.Action("Index", "HelpRequest", new { helpRequestId = 0 })';
+
+        url = url.replace('0', model.Id);
+        message = message.replace('{0}', model.Client);
+        message = message.replace('{1}', url);
+
+        AHelper.generatePopup(message, url);
+    });
+
+    connection.start();
+</script>

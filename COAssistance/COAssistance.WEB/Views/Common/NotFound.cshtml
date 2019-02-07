@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.PageTitle = "404";
+    Layout = "~/Views/Shared/_LayoutCommon.cshtml";
+}
+
+<div class="error-container">
+    <div class="error-block not-found">
+        @*<img src="~/Content/template/img/Life_Preserver_Pin.png"/>*@
+        <h1>404</h1>
+        <p>@Resource.ContentNotFound</p>
+        @Html.RouteLink(Resource.Dashboard, HomeRoutes.Index)
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿@model HelpRequestResponseModel
+
+<div id="modal-block">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h4 class="modal-title">@Resource.Details</h4>
+    </div>
+    <div class="modal-body">
+        <ul class="list-group list-group-unbordered">
+            <li class="list-group-item">
+                <b>@Resource.RequestState</b>
+                <span class="text-muted pull-right">@Model.HelpRequestState</span>
+            </li>
+            <li class="list-group-item">
+                <b>@Resource.ArrivalDate</b>
+                <span class="text-muted pull-right">@Model.ExpirationDate.ToLocalTime()</span>
+            </li>
+            <li class="list-group-item">
+                <b>@Resource.Active</b>
+                <span class="text-muted pull-right">@Html.StatusText(Model.IsActive, Resource.Yes, Resource.No)</span>
+            </li>
+        </ul>
+        <strong>@Resource.Instruction</strong>
+        <p class="text-muted">@Model.ShortInstructions</p>        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">@Resource.Close</button>
+    </div>
+</div>

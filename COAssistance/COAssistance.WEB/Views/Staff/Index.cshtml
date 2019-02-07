@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.PageTitle = Resource.Staff;
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                @ViewHelpers.ButtonCreate(this.Url, StaffRoutes.Create)
+            </div>
+            <div id="dataTarget" class="box-body">
+                @Ajax.JavaScriptActionAsync("AHelper.loadData", Url.RouteUrl(StaffRoutes.Data))                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+
+<log>
+	Date: 2/7/2019 2:10:50 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:10:59 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:11:08 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:11:52 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:12:11 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:13:26 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 2/7/2019 2:13:53 PM
+	Message: An error occurred while sending the request.
+	Details: Unable to connect to the remote server
+	Url: /coaui/access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>

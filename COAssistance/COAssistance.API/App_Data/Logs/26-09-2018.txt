@@ -1,0 +1,80 @@
+
+<log>
+	Date: 26.09.2018. 07:56:48
+	Message: An error occurred while executing the command definition. See the inner exception for details.
+	Details: Invalid column name 'Gender'.
+Invalid column name 'EmergencyContactPhoneNumber'.
+Invalid column name 'HealthProblems'.
+Invalid column name 'ValidUntil'.
+Invalid column name 'BirthDate'.
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 26.09.2018. 07:56:49
+	Message: An error occurred while executing the command definition. See the inner exception for details.
+	Details: Invalid column name 'Gender'.
+Invalid column name 'EmergencyContactPhoneNumber'.
+Invalid column name 'HealthProblems'.
+Invalid column name 'ValidUntil'.
+Invalid column name 'BirthDate'.
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 26.09.2018. 12:34:11
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.API\Views\home\RegistrationEmail.cshtml(95): error CS0103: The name 'media' does not exist in the current context
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 26.09.2018. 12:35:53
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.API\Views\home\RegistrationEmail.cshtml(2): error CS1002: ; expected
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 26.09.2018. 12:35:58
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.API\Views\home\RegistrationEmail.cshtml(2): error CS1002: ; expected
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 26.09.2018. 12:36:02
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.API\Views\home\RegistrationEmail.cshtml(2): error CS0103: The name 'layout' does not exist in the current context
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 26.09.2018. 12:36:18
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.API\Views\home\RegistrationEmail.cshtml(2): error CS0103: The name '_layout' does not exist in the current context
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 26.09.2018. 12:48:07
+	Message: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\coa\5afd167b\dc1c45ba\App_Web_registrationemail.cshtml.a8d08dba.oph-hbws.0.cs(31): error CS1003: Syntax error, ',' expected
+	Details: 
+	Url: /coa/home/RegistrationEmail
+	User: ::1
+	Browser: Chrome
+</log>

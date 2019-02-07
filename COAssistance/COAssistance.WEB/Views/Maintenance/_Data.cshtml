@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MaintenanceModel>
+<div class="table-box">
+    @Html.AntiForgeryToken()
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>@Resource.PasswordLength</th>
+                <th>@Resource.SpecialCharacters</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.PasswordLength</td>
+                    <td>@item.PasswordSpecialCharacters</td>
+                    <td>
+                        <ul>
+                            <li><a title="@Resource.Edit" class="modal-link" href="@Url.RouteUrl(MaintenanceRoutes.Edit, new { maintenanceId = item.MaintenanceId })"><i class="fa fa-pencil"></i></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

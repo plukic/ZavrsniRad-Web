@@ -1,0 +1,33 @@
+﻿<header class="main-header">
+    <a href="@Url.RouteUrl(HomeRoutes.Index)" class="logo">
+        <span class="logo-mini"><b><i class="fa fa-life-ring"></i></b></span>
+        <span class="logo-lg"><b>@AssistanceConstants.ApplicationName</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"></a>
+        <div class="navbar-custom-menu">
+            @using (Html.BeginRouteForm(AccessRoutes.SignOut, FormMethod.Post, new { id = "signOutForm" }))
+            {
+                <ul class="nav navbar-nav">
+                    <li id="notificationBlock">
+                        <script>
+                            AHelper.loadData("@Url.RouteUrl(NotificationRoutes.Data)", $('#notificationBlock'));
+                        </script>
+                    </li>
+                    <li>
+                        @Html.AntiForgeryToken()
+                        <a href="#" id="signOut">
+                            <i class="fa fa-sign-out margin-r-5"></i>
+                            @Resource.SignOut
+                        </a>
+                        <script>
+                            $('#signOut').click(function () {
+                                $('#signOutForm').submit();
+                            });
+                        </script>
+                    </li>
+                </ul>
+            }
+        </div>
+    </nav>
+</header>

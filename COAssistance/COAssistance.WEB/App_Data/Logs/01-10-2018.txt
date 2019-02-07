@@ -1,0 +1,45 @@
+
+<log>
+	Date: 10/1/2018 12:21:59 PM
+	Message: C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ad07c63f\3e24c255\App_Web_signin.cshtml.75f852f6.yaogulxf.0.cs(59): error CS0246: The type or namespace name 'SignInModel' could not be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/1/2018 12:21:59 PM
+	Message: C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ad07c63f\3e24c255\App_Web_signin.cshtml.75f852f6.yaogulxf.0.cs(59): error CS0246: The type or namespace name 'SignInModel' could not be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/1/2018 12:21:59 PM
+	Message: C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ad07c63f\3e24c255\App_Web_signin.cshtml.75f852f6.yaogulxf.0.cs(59): error CS0246: The type or namespace name 'SignInModel' could not be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/1/2018 12:21:59 PM
+	Message: C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ad07c63f\3e24c255\App_Web_signin.cshtml.75f852f6.yaogulxf.0.cs(59): error CS0246: The type or namespace name 'SignInModel' could not be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /access/sign-in/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/1/2018 12:34:15 PM
+	Message: C:\Users\Mirza-PC\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\GasCompany\_CreateLogo.cshtml(21): error CS1061: 'GasCompanyCreateLogoViewModel' does not contain a definition for 'IsEditMode' and no extension method 'IsEditMode' accepting a first argument of type 'GasCompanyCreateLogoViewModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /gas-companies/create/
+	User: ::1
+	Browser: Chrome
+</log>

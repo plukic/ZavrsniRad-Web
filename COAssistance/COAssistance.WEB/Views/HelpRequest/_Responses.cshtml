@@ -1,0 +1,42 @@
+﻿@model IEnumerable<HelpRequestResponseModel>
+<div class="table-box">
+    @if (Model.Any())
+    {
+        @Html.AntiForgeryToken()
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>@Resource.RequestState</th>
+                    <th>@Resource.ArrivalDate</th>
+                    <th>@Resource.CurrentlyActive</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var response in Model)
+                {
+                    <tr>
+                        <td>@response.HelpRequestState</td>
+                        <td>@response.HelpIncomingDateTime.ToLocalTimeWithFormat()</td>
+                        <td>@Html.FaviconStatusIcon(response.IsActive)</td>
+                        <td>
+                            <ul>
+                                <li><a title="@Resource.Details" class="modal-link" href="@Url.RouteUrl(HelpRequestsRoutes.ResponseDetails, new { helpRequestId = response.HelpRequestId, responseId = response.Id })"><i class="fa fa-file-text-o"></i></a></li>
+                                @if (!response.IsActive)
+                                {
+                                    <li>
+                                        <a title="@Resource.Activate" onclick="AHelper.triggerAction('@Url.RouteUrl(HelpRequestsRoutes.ResponseActivation, new { responseId = response.Id, helpRequestId = response.HelpRequestId })', $('#existingResponsesBlock'))"><i class="fa fa-check text-error"></i></a>
+                                    </li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        @ViewHelpers.NoResults(Resource.NoResponses)
+    }
+</div>

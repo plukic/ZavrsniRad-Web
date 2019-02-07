@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.PageTitle = Resource.Dashboard;
+}
+
+<div id="dataTarget">
+    @Ajax.JavaScriptActionAsync("AHelper.loadData", Url.RouteUrl(HomeRoutes.Data))    
+</div>

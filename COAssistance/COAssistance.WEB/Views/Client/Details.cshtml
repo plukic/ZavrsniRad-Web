@@ -1,0 +1,75 @@
+﻿@model ClientsDetailsModel
+@{
+    ViewBag.PageTitle = Resource.Details;
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <a class="btn btn-flat btn-default" href="@Url.ReturnUrl(Request.UrlReferrer)">
+                    <i class="fa fa-angle-left margin-r-5"></i>
+                    @Resource.Back
+                </a>
+                <a class="btn btn-flat btn-danger modal-link" href="@Url.RouteUrl(ClientRoutes.ResetPassword, new { clientId = Model.Id })">
+                    <i class="fa fa-key margin-r-5"></i>
+                    @Resource.PasswordReset
+                </a>
+            </div>
+            <div class="box-body">
+                <div class="col-md-4 no-padding">
+                    <div class="col-md-6">
+                        <strong>@Resource.FullName</strong>
+                        <p class="text-muted">@(Model.FullName ?? "/")</p>
+                        <hr />
+                        <strong>@Resource.CardNumber</strong>
+                        <p class="text-muted">@Model.CardNumber</p>
+                        <hr />
+                        <strong>@Resource.Email</strong>
+                        <p class="text-muted">@(Model.Email ?? "/")</p>
+                        <hr />
+                        <strong>@Resource.PhoneNumber</strong>
+                        <p class="text-muted">@(Model.PhoneNumber ?? "/")</p>
+                        <hr />
+                    </div>
+                    <div class="col-md-6">
+                        <strong>@Resource.Address</strong>
+                        <p class="text-muted">@(Model.Address ?? "/")</p>
+                        <hr />
+                        <strong>@Resource.City</strong>
+                        <p class="text-muted">@(Model.City ?? "/")</p>
+                        <hr />
+                    </div>
+                    <div class="col-md-12">
+                        <strong>@Resource.ChronicDiseases</strong>
+                        <p class="text-muted">@Model.ChronicDiseases</p>
+                        <hr />
+                        <strong>@Resource.Diagnose</strong>
+                        <p class="text-muted">@Model.Diagnose</p>
+                        <hr />
+                        <strong>@Resource.HistoryOfCriticalIllness</strong>
+                        <p class="text-muted">@Model.HistoryOfCriticalIllness</p>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="col-md-8" id="emergencyNumbers">
+                    <script>
+                        AHelper.loadData('@Url.RouteUrl(ClientRoutes.EmergencyNumbers, new { clientId = Model.Id })', $('#emergencyNumbers'));
+                    </script>
+                </div>
+
+                @*<div class="col-md-8" id="policies">
+                    <script>
+                        AHelper.loadData('@Url.RouteUrl(InsurancePolicyRoutes.ClientInsurances, new { clientId = Model.Id })', $('#policies'));
+                    </script>
+                </div>*@
+
+                <div class="col-md-8" id="clientlogindata">
+                    <script>
+                        AHelper.loadData('@Url.RouteUrl(ClientLoginDataRoutes.Data, new { userId = Model.Id })', $('#clientlogindata'));
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

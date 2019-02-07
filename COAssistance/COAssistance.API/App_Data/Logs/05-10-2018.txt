@@ -1,0 +1,307 @@
+
+<log>
+	Date: 05.10.2018. 06:50:24
+	Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Details: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 05.10.2018. 07:56:41
+	Message: An error occurred when trying to create a controller of type 'COAssistance.API.Controllers.HomeController'. Make sure that the controller has a parameterless public constructor.
+	Details: No parameterless constructor defined for this object.
+	Url: /coa/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 07:57:14
+	Message: An error occurred when trying to create a controller of type 'COAssistance.API.Controllers.HomeController'. Make sure that the controller has a parameterless public constructor.
+	Details: No parameterless constructor defined for this object.
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 07:57:32
+	Message: An error occurred when trying to create a controller of type 'COAssistance.API.Controllers.HomeController'. Make sure that the controller has a parameterless public constructor.
+	Details: No parameterless constructor defined for this object.
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 07:58:36
+	Message: An error occurred when trying to create a controller of type 'COAssistance.API.Controllers.HomeController'. Make sure that the controller has a parameterless public constructor.
+	Details: No parameterless constructor defined for this object.
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:00:33
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:00:47
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:01:07
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:06:04
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:06:23
+	Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Details: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 05.10.2018. 08:06:25
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:07:43
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:08:24
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:08:24
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:08:48
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:09:09
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:09:54
+	Message: Value cannot be null.
+Parameter name: address
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:12:15
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:14:27
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:16:57
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:22:27
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:25:20
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:25:21
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 08:30:55
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:06:18
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:06:18
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:06:19
+	Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Details: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
+
+<log>
+	Date: 05.10.2018. 09:07:00
+	Message: Razor Run/Compile error
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:07:46
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:13:48
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:13:50
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:14:54
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:15:17
+	Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+	Details: 
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 05.10.2018. 09:20:58
+	Message: Failure sending mail.
+	Details: Unable to connect to the remote server
+	Url: /coa/home/test
+	User: ::1
+	Browser: Chrome
+</log>

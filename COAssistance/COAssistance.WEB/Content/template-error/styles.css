@@ -1,0 +1,59 @@
+﻿body {
+margin: 0;
+}
+.error-container {
+width: 100%;
+text-align: center;
+font-family: 'Muli', sans-serif;
+background: #f5f7fa;
+height: 100vh;
+}
+.error-block {
+width: 100%;
+}
+.error-block h1 {
+color: #3c8dbc;
+margin: 0;
+font-size: 200px;
+}
+.danger {
+color: #d9534f !important;
+font-size: 100px !important;
+}
+.error-block p {
+margin-top: 0;
+font-size: 20px;
+}
+@media (max-width:900px) and (min-width:768px) {
+.error-container img {
+display: none;
+}
+.error-block {
+top: 150px;
+}
+.error-block p {
+margin-top: 0;
+font-size: 22px;
+}
+}
+@media only screen and (max-width: 768px) {
+.error-container {
+display: table;
+}
+.error-container img {
+display: none;
+}
+.error-block {
+display: table-cell;
+vertical-align: middle;
+}
+}
+@media only screen and (max-width: 468px) {
+.error-block h1 {
+font-size: 150px;
+}
+.error-block p {
+margin-top: 0;
+font-size: 18px;
+}
+}

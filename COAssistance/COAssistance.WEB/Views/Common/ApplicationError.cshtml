@@ -1,0 +1,13 @@
+﻿@model string
+@{
+    ViewBag.PageTitle = Resource.ApplicationError;
+    Layout = "~/Views/Shared/_LayoutCommon.cshtml";
+}
+
+<div class="error-container">
+    <div class="error-block not-found">
+        <h1 class="danger">@Resource.ApplicationError</h1>
+        <p>@Model</p>
+        @Html.RouteLink(Resource.Dashboard, HomeRoutes.Index)
+    </div>
+</div>

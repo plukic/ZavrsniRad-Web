@@ -1,0 +1,22 @@
+﻿@model HighwayRouteCreateEditViewModel
+
+@Html.DropDownListFor(m => m.EntranceHighwayId, Model.Highways, Resource.ChooseHighway, new { @class = "form-control" })
+<script>
+    $('#@Html.FieldIdFor(m => m.EntranceHighwayId)').change(function () {
+        if ($(this).val() > 0) {
+
+
+                var jqxhr = $.get('@Url.Action("HighwayTollbooths", "HighwayRoute")', { highwayId: $('#@Html.FieldIdFor(m => m.EntranceHighwayId)').val() });
+
+                jqxhr.done(function (content) {
+                    var options = $('#@Html.FieldIdFor(m => m.HighwayTollboothEntranceId)');
+
+                    options.empty().append($("<option class='selected' />").val("0").text('@Resource.ChooseEntrance'));
+
+                    $.each(content, function () {
+                        options.append($("<option />").val(this.Id).text(this.Name));
+                    });
+                });
+            }
+        });
+</script>

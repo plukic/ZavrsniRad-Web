@@ -1,0 +1,23 @@
+﻿@model ConfirmationModel
+<div id="modal-block">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h4 class="modal-title">@Resource.Confirmation</h4>
+    </div>
+    @using (Html.BeginRouteForm(Model.RouteName, FormMethod.Post, new { @id = "formb" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.Id)
+        @Html.HiddenFor(m => m.AdditionalData)
+        <div class="modal-body">
+            <p class="text-error text-md">
+                <i class="fa fa-exclamation-triangle margin-r-5"></i>
+                @Resource.ConfirmationNote
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">@Resource.Cancel</button>
+            <button onclick="return AHelper.postData(false, true, '@(Model.UpdateTargetId != null ? "#" + Model.UpdateTargetId : null)')" class="btn btn-danger btn-flat">@Resource.Submit</button>
+        </div>
+    }
+</div>

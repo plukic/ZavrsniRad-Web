@@ -1,0 +1,11 @@
+
+<log>
+	Date: 10/16/18 07:44:42
+	Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+	Details: 
+	Url: /client-login-data/deactivate/
+	User: ::1
+	Browser: Chrome
+</log>

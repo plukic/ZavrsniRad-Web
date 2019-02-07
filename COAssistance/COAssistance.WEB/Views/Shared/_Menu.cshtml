@@ -1,0 +1,46 @@
+﻿<aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">@Resource.Administration.ToUpper()</li>
+            <li>
+                <a href="@Url.RouteUrl(HomeRoutes.Index)">
+                    <i class="fa fa-dashboard margin-r-5">
+                    </i><span>@Resource.Dashboard</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span>@Resource.Users</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="@Url.RouteUrl(ClientRoutes.Index)"><i class="fa fa-chevron-circle-right margin-r-5"></i>@Resource.Clients</a></li>
+                    <li><a href="@Url.RouteUrl(StaffRoutes.Index)"><i class="fa fa-chevron-circle-right margin-r-5"></i>@Resource.Staff</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-wrench"></i>
+                    <span>@Resource.Maintenance</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="@Url.RouteUrl(MaintenanceRoutes.Index)"><i class="fa fa-chevron-circle-right margin-r-5"></i>@Resource.BasicSettings</a></li>
+                    <li><a href="@Url.RouteUrl(UserGroupsRoutes.Index)"><i class="fa fa-chevron-circle-right margin-r-5"></i>@Resource.UserGroups</a></li>
+                </ul>
+            </li>
+            <li class="header">Upravljanje zahtjevima</li>
+            <li>
+                <a href="@Url.RouteUrl(HelpRequestsRoutes.Index)">
+                    <i class="fa fa-medkit margin-r-5">
+                    </i><span>@Resource.HelpRequests</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>

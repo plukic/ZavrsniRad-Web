@@ -1,0 +1,80 @@
+﻿@model ClientsManageModel
+<div class="table-box">
+    <form id="forms" action="@Url.RouteUrl(ClientRoutes.Data)">
+        <div class="col-md-4 margin-b-10 no-padding">
+            @Html.TextBoxFor(m => m.SearchText, new { @class = "form-control", placeholder = Resource.SearchText })
+        </div>
+        <div class="col-md-2">
+            <a onclick="return AHelper.searchData()" class="btn btn-default btn-flat">
+                <i class="fa fa-search margin-r-5"></i>@Resource.SubmitSearch
+            </a>
+        </div>
+    </form>
+    @if (Model.PagingResult.Result.Any())
+    {
+        @Html.AntiForgeryToken()
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>@Resource.Client</th>
+                    <th>@Resource.CardNumber</th>
+                    <th>@Resource.AccountActive</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var client in Model.PagingResult.Result)
+                {
+                <tr>
+                    <td>
+                        @client.FullName
+                    </td>
+                    <td>@client.CardMembershipNumber</td>
+                    <td>@Html.FaviconStatusIcon(client.IsActive)</td>
+                    <td>
+                        <ul>
+                            <li><a title="@Resource.Details" href="@Url.RouteUrl(ClientRoutes.Details, new { clientId = client.Id })"><i class="fa fa-address-card-o"></i></a></li>
+                            @if (client.IsActive)
+                            {
+                                <li><a title="@Resource.Edit" class="modal-link" href="@Url.RouteUrl(ClientRoutes.Edit, new { clientId = client.Id })"><i class="fa fa-pencil"></i></a></li>
+                                <li><a title="@Resource.Deactivate" class="modal-link text-error" href="@Url.RouteUrl(CommonRoutes.Confirmation, new { client.Id, routeName = ClientRoutes.ChangeStatus })"><i class="fa fa-mail-reply"></i></a></li>
+                            }
+                            else
+                            {
+                                <li><a title="@Resource.Activate" class="modal-link text-error" href="@Url.RouteUrl(CommonRoutes.Confirmation, new { client.Id, routeName = ClientRoutes.ChangeStatus })"><i class="fa fa-mail-forward"></i></a></li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        if (Model.PagingResult.TotalPages > 1)
+        {
+            <ul class="pagination-u pagination no-margin">
+                @if (Model.PagingResult.CurrentPage > 1)
+                {
+                    <li><a href="@Url.Action("Data", new { Model.SearchText, page = Model.PagingResult.CurrentPage - 1 })">«</a></li>
+                }
+                @for (int i = Model.PagingResult.StartPage; i <= Model.PagingResult.EndPage; i++)
+                {
+                    <li class="@(i == Model.PagingResult.CurrentPage ? "active" : "")"><a href="@Url.Action("Data", new { Model.SearchText, page = i })">@i</a></li>
+                }
+                @if (Model.PagingResult.CurrentPage < Model.PagingResult.TotalPages)
+                {
+                    <li><a href="@Url.Action("Data", new { Model.SearchText, page = Model.PagingResult.CurrentPage + 1 })">»</a></li>
+                }
+            </ul>
+        }
+    }
+    else
+    {
+        @ViewHelpers.NoResults(Resource.NoSearchResults)
+    }
+</div>
+<script>
+    $('.pagination-u a').click(function () {
+        AHelper.loadData(($(this).attr('href')));
+        return false;
+    });
+</script>

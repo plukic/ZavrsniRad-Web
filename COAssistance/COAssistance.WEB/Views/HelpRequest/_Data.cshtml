@@ -1,0 +1,78 @@
+﻿@model HelpRequestsManageModel
+
+<div class="table-box">
+    <form id="forms" action="@Url.Action("Data")">
+        <div class="col-md-4 margin-b-10 no-padding">
+            @Html.EnumDropDownListFor(m => m.HelpRequestCategory, Resource.ChooseCategory, new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            <a onclick="return AHelper.searchData()" class="btn btn-default btn-flat">
+                <i class="fa fa-search margin-r-5"></i>@Resource.SubmitSearch
+            </a>
+        </div>
+    </form>
+    @if (Model.PagingResult.Result.Any())
+    {
+        @Html.AntiForgeryToken()
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>@Resource.CreationDate</th>
+                    <th>@Resource.Category</th>
+                    <th>@Resource.Client</th>
+                    <th>@Resource.Completed</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var request in Model.PagingResult.Result)
+                {
+                    <tr>
+                        <td>@request.RequestDate.ToLocalTimeWithFormat()</td>
+                        <td>@(request.HelpRequestCategory.GetName<HelpRequestCategory>())</td>
+                        <td><a title="@Resource.Details" href="@Url.RouteUrl(ClientRoutes.Details, new { clientId = request.ClientId })">@request.Client</a></td>
+                        <td>@Html.FaviconStatusIcon(request.IsSolved)</td>
+                        <td>
+                            <ul>
+                                <li><a title="@Resource.Details" onclick="AHelper.loadData('@Url.RouteUrl(HelpRequestsRoutes.Details, new { helpRequestId = request.Id })')"><i class="fa fa-file-text-o"></i></a></li>
+                                @if (!request.IsSolved)
+                                {
+                                    <li><a title="@Resource.Complete" class="modal-link text-error" href="@Url.RouteUrl(CommonRoutes.Confirmation, new { Id = request.Id, routeName = HelpRequestsRoutes.Complete })"><i class="fa fa-check"></i></a></li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        if (Model.PagingResult.TotalPages > 1)
+        {
+            <div class="box-footer clearfix">
+                <ul class="pagination-u pagination no-margin">
+                    @if (Model.PagingResult.CurrentPage > 1)
+                    {
+                        <li><a href="@Url.Action("Data", new { Model.HelpRequestCategory, page = Model.PagingResult.CurrentPage - 1 })">«</a></li>
+                    }
+                    @for (int i = Model.PagingResult.StartPage; i <= Model.PagingResult.EndPage; i++)
+                    {
+                        <li class="@(i == Model.PagingResult.CurrentPage ? "active" : "")"><a href="@Url.Action("Data", new { Model.HelpRequestCategory, page = i })">@i</a></li>
+                    }
+                    @if (Model.PagingResult.CurrentPage < Model.PagingResult.TotalPages)
+                    {
+                        <li><a href="@Url.Action("Data", new { Model.HelpRequestCategory, page = Model.PagingResult.CurrentPage + 1 })">»</a></li>
+                    }
+                </ul>
+            </div>
+        }
+    }
+    else
+    {
+        @ViewHelpers.NoResults(Resource.NoSearchResults)
+    }
+    <script>
+        $('.pagination-u a').click(function (e) {
+            e.preventDefault();
+            AHelper.loadData($(this).attr('href'));
+        });
+    </script>
+</div>

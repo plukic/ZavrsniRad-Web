@@ -1,0 +1,37 @@
+﻿@model IEnumerable<StaffModel>
+<div class="table-box">
+    @Html.AntiForgeryToken()
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>@Resource.FirstName</th>
+                <th>@Resource.LastName</th>
+                <th>@Resource.UserName</th>
+                <th>@Resource.Email</th>
+                <th>@Resource.LastLoginTime</th>
+                <th>@Resource.Active</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var staff in Model)
+            {
+            <tr>
+                <td>@staff.FirstName</td>
+                <td>@staff.LastName</td>
+                <td>@staff.Username</td>
+                <td>@staff.Email</td>
+                <td>@(staff.LastLoginTime.HasValue?staff.LastLoginTime.ToDefaultFormat(DateTimeFormat.DateTime): "N/A")</td>
+                <td>@Html.FaviconStatusIcon(staff.IsActive)</td>
+                <td>
+                    <ul>
+                        <li><a title="@Resource.PasswordReset" class="modal-link" href="@Url.RouteUrl(StaffRoutes.ResetPassword, new { staffId = staff.Id })"><i class="fa fa-key"></i></a></li>
+                        <li><a title="@Resource.Activate" onclick="AHelper.triggerAction('@Url.RouteUrl(StaffRoutes.ChangeStatus, new { staffId = staff.Id, status = true })')"><i class="fa fa-check"></i></a></li>
+                        <li><a title="@Resource.Deactivate" class="text-error" onclick="AHelper.triggerAction('@Url.RouteUrl(StaffRoutes.ChangeStatus, new { staffId = staff.Id, status = false })')"><i class="fa fa-times"></i></a></li>
+                    </ul>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

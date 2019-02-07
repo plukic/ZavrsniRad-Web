@@ -1,0 +1,27 @@
+
+<log>
+	Date: 10/12/2018 12:22:32 PM
+	Message: OK vlado
+	Details: 
+	Url: /home/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/12/2018 12:22:59 PM
+	Message: OK vlado
+	Details: 
+	Url: /home/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 10/12/2018 12:25:15 PM
+	Message: OK vlado
+	Details: 
+	Url: /home/data/
+	User: ::1
+	Browser: Chrome
+</log>

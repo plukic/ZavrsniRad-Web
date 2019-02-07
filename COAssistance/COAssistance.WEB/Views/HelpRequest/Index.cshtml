@@ -1,0 +1,13 @@
+﻿@model string
+@{
+    ViewBag.PageTitle = Resource.HelpRequests;
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div id="dataTarget" class="box-body">
+                @Ajax.JavaScriptActionAsync("AHelper.loadData", Model)                
+            </div>
+        </div>
+    </div>
+</div>

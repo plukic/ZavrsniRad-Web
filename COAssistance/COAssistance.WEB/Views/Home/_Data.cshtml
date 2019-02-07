@@ -1,0 +1,108 @@
+﻿@model DashboardModel
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-default">
+            <div class="box-header">
+                <h3 class="box-title">Posljednji zahtjevi za pomoć</h3>
+                <a href="@Url.RouteUrl(HelpRequestsRoutes.Index)" class="btn btn-danger btn-flat btn-xs margin-l-10">
+                    @Resource.ShowAll
+                </a>
+            </div>
+            <div class="box-body">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>@Resource.CreationDate</th>
+                            <th>@Resource.Category</th>
+                            <th>@Resource.Client</th>
+                            <th>@Resource.Completed</th>
+                            <th>@Resource.UrlLink</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var request in Model.HelpRequest)
+                        {
+                        <tr>
+                            <td>@request.RequestDate.ToLocalTimeWithFormat()</td>
+                            <td>@(request.HelpRequestCategory.GetName<HelpRequestCategory>())</td>
+                            <td><a title="@Resource.Details" href="@Url.RouteUrl(ClientRoutes.Details, new { clientId = request.ClientId })">@request.Client</a></td>
+                            <td>@Html.FaviconStatusIcon(request.IsSolved)</td>
+                            <td><a href="@Url.RouteUrl(HelpRequestsRoutes.Index, new { helpRequestId = request.Id })">@Resource.UrlLink</a></td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    @*<div class="col-md-6">
+        <div class="box box-default">
+            <div class="box-header">
+                <h3 class="box-title">@Resource.RoadConditions</h3>
+                <a href="@Url.RouteUrl(RoadConditionRoutes.Index)" class="btn btn-danger btn-flat btn-xs margin-l-10">
+                    @Resource.ShowAll
+                </a>
+            </div>
+            <div class="box-body">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>@Resource.Type</th>
+                            <th>@Resource.CreationDate</th>
+                            <th>@Resource.Language</th>
+                            <th>@Resource.Active</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.RoadConditions)
+                        {
+                            <tr>
+                                <td>
+                                    <span>@(Html.FaviconByEnum<RoadConditionType>(item.Type))</span>
+                                    @(item.Type.GetName<RoadConditionType>())
+                                </td>
+                                <td>@item.CreatedAt.ToLocalTimeWithFormat()</td>
+                                <td>@item.Language</td>
+                                <td>@Html.FaviconStatusIcon(item.IsActive)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>*@
+
+
+    @*<div class="col-md-6">
+        <div class="box box-default">
+            <div class="box-header">
+                <h3 class="box-title">@Resource.LatestClients</h3>
+                <a href="@Url.RouteUrl(ClientRoutes.Index)" class="btn btn-danger btn-flat btn-xs margin-l-10">
+                    @Resource.ShowAll
+                </a>
+            </div>
+            <div class="box-body">
+                @ViewHelpers.CalloutInfo("U izradi", "info-circle")
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="box box-default">
+            <div class="box-header">
+                <h3 class="box-title">Posljednje lokacije</h3>
+                <a href="@Url.RouteUrl(LocationRoutes.Index)" class="btn btn-danger btn-flat btn-xs margin-l-10">
+                    @Resource.ShowAll
+                </a>
+            </div>
+            <div class="box-body">
+                @ViewHelpers.CalloutInfo("U izradi", "info-circle")
+            </div>
+        </div>
+    </div>*@
+
+</div>

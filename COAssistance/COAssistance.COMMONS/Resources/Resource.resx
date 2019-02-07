@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Activate" xml:space="preserve">
+    <value>Aktiviraj</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktivan</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="AddRecord" xml:space="preserve">
+    <value>Novi zapis</value>
+  </data>
+  <data name="ApplicationError" xml:space="preserve">
+    <value>Greška u aplikaciji</value>
+  </data>
+  <data name="ApplicationErrorText" xml:space="preserve">
+    <value>Došlo je do neočekivane greške u aplikaciji. Pokušajte ponovno kasnije.</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="BasicSettings" xml:space="preserve">
+    <value>Osnovne postavke</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Datum rođenja</value>
+  </data>
+  <data name="BloodType" xml:space="preserve">
+    <value>Krvna grupa</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Odustani</value>
+  </data>
+  <data name="CancelSuccess" xml:space="preserve">
+    <value>Sve prethodno sačuvane stavke su izbrisane.</value>
+  </data>
+  <data name="CardNumber" xml:space="preserve">
+    <value>Broj kartice</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Promijeni lozinku</value>
+  </data>
+  <data name="ChangeStatus" xml:space="preserve">
+    <value>Promijeni status</value>
+  </data>
+  <data name="ChooseCategory" xml:space="preserve">
+    <value>Odaberite kategoriju</value>
+  </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Odaberite jezik</value>
+  </data>
+  <data name="ChooseRoadConditionType" xml:space="preserve">
+    <value>Odaberite vrstu stanja na putu</value>
+  </data>
+  <data name="ClickForDetails" xml:space="preserve">
+    <value>Klikni za detalje</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Klijent</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Klijenti</value>
+  </data>
+  <data name="ClientSync" xml:space="preserve">
+    <value>Sinhronizacija klijenata</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zatvori</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Završi</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Završeno</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Potvrda</value>
+  </data>
+  <data name="ConfirmationNote" xml:space="preserve">
+    <value>Da li ste sigurni ?</value>
+  </data>
+  <data name="ConfirmedPassword" xml:space="preserve">
+    <value>Ponovljena lozinka</value>
+  </data>
+  <data name="ConfirmedPasswordNote" xml:space="preserve">
+    <value>Potvrdite novu lozinku</value>
+  </data>
+  <data name="ContentNotFound" xml:space="preserve">
+    <value>Traženi sadržaj nije pronađen. Vratite se na kontrolnu ploču i pokušajte ponovno.</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Datum kreiranja</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Kontrolna ploča</value>
+  </data>
+  <data name="DataNotFound" xml:space="preserve">
+    <value>Odabrani zapis više ne postoji.</value>
+  </data>
+  <data name="DateConflict" xml:space="preserve">
+    <value>Odabrani datum mora biti ispred današnjeg datuma.</value>
+  </data>
+  <data name="DateNotSet" xml:space="preserve">
+    <value>Datum nije postavljen</value>
+  </data>
+  <data name="DateOrPredefined" xml:space="preserve">
+    <value>Odaberite datum ili označite predefinisano trajanje police.</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>dan</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>dana</value>
+  </data>
+  <data name="Deactivate" xml:space="preserve">
+    <value>Deaktiviraj</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Izbriši</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Da li sigurno želite izbrisati odabrani zapis ?</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Izbrisano</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Brisanje zapisa</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalji</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Ažuriraj</value>
+  </data>
+  <data name="EditRecord" xml:space="preserve">
+    <value>Ažuriranje zapisa</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailInvalidFormat" xml:space="preserve">
+    <value>E-mail adresa nije u validnom formatu.</value>
+  </data>
+  <data name="EmergencyContactPhoneNumber" xml:space="preserve">
+    <value>Telefon za hitne slučaje</value>
+  </data>
+  <data name="ErrorUsernameLength" xml:space="preserve">
+    <value>Korisničko ime mora sadržavati minimalno 6 karaktera.</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Žensko</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Završi</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grupa</value>
+  </data>
+  <data name="HealthProblems" xml:space="preserve">
+    <value>Zdravstveni problemi</value>
+  </data>
+  <data name="HelpRequests" xml:space="preserve">
+    <value>Zahtjevi za pomoć</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Neaktivan</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="InvalidLogin" xml:space="preserve">
+    <value>Pogrešno korisničko ime ili lozinka.</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Stavke</value>
+  </data>
+  <data name="ItemsNumber" xml:space="preserve">
+    <value>Broj stavki</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Jezik</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Prezime</value>
+  </data>
+  <data name="LatestClients" xml:space="preserve">
+    <value>Posljednji klijenti</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Geografska širina</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Dužina</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Lokacije</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Geografska dužina</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Održavanje</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Muško</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Održavanje</value>
+  </data>
+  <data name="ManageRoles" xml:space="preserve">
+    <value>Ažuriraj uloge</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naziv</value>
+  </data>
+  <data name="NewItem" xml:space="preserve">
+    <value>Nova stavka</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nova lozinka</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Naprijed</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="NoItems" xml:space="preserve">
+    <value>Nema pronađenih stavki</value>
+  </data>
+  <data name="NoResults" xml:space="preserve">
+    <value>Nema pronađenih zapisa.</value>
+  </data>
+  <data name="NoSearchResults" xml:space="preserve">
+    <value>Nema pronađenih rezultata pretrage.</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>Nije postavljeno</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Stara lozinka</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="PasswordConfirmed" xml:space="preserve">
+    <value>Ponovljena lozinka</value>
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>Dužina lozinke</value>
+  </data>
+  <data name="PasswordMismatch" xml:space="preserve">
+    <value>Unesene lozinke se ne podudaraju.</value>
+  </data>
+  <data name="PasswordReset" xml:space="preserve">
+    <value>Promjena lozinke</value>
+  </data>
+  <data name="PasswordResetSuccess" xml:space="preserve">
+    <value>Uspješno ste ažurirali lozinku.</value>
+  </data>
+  <data name="PasswordWeakInput" xml:space="preserve">
+    <value>Unesena lozinka ne zadovoljava unesene uvjete.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="PolicyDuration" xml:space="preserve">
+    <value>Trajanje police</value>
+  </data>
+  <data name="PolicyDurationNote" xml:space="preserve">
+    <value>Trajanje police izraženo u danima</value>
+  </data>
+  <data name="PolicyExpired" xml:space="preserve">
+    <value>Polica istekla</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Korisnički profil</value>
+  </data>
+  <data name="RecordActivation" xml:space="preserve">
+    <value>Aktivacija zapisa</value>
+  </data>
+  <data name="RecordActive" xml:space="preserve">
+    <value>Odabrani zapis je ponovno aktivan.</value>
+  </data>
+  <data name="RecordAddSuccess" xml:space="preserve">
+    <value>Uspješno ste dodali novi zapis.</value>
+  </data>
+  <data name="RecordDeleteSuccess" xml:space="preserve">
+    <value>Uspješno ste izbrisali odabrani zapis.</value>
+  </data>
+  <data name="RecordEditSuccess" xml:space="preserve">
+    <value>Sve izmjene su uspješno sačuvane.</value>
+  </data>
+  <data name="RecordInactive" xml:space="preserve">
+    <value>Odabrani zapis više nije aktivan.</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>Registrovani</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Zapamti me?</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Ovo polje je obavezno.</value>
+  </data>
+  <data name="RoadConditionActivationNote" xml:space="preserve">
+    <value>Ukoliko zapis označite kao aktivan, trenutno aktivan zapis će biti deaktiviran.</value>
+  </data>
+  <data name="RoadConditions" xml:space="preserve">
+    <value>Stanje na putevima</value>
+  </data>
+  <data name="RoadConditionType" xml:space="preserve">
+    <value>Vrsta stanja na putu </value>
+  </data>
+  <data name="RoleRequired" xml:space="preserve">
+    <value>Minimalno jedna uloga mora biti odabrana.</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Uloge</value>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>Tekst pretrage</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Vidi sve</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Prijava</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Odjava</value>
+  </data>
+  <data name="SpecialCharacters" xml:space="preserve">
+    <value>Broj specijalnih karaktera</value>
+  </data>
+  <data name="Staff" xml:space="preserve">
+    <value>Osoblje</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Potvrdi</value>
+  </data>
+  <data name="SubmitSearch" xml:space="preserve">
+    <value>Traži</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Naslov</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Vrsta</value>
+  </data>
+  <data name="Unregistered" xml:space="preserve">
+    <value>Neregistrovani</value>
+  </data>
+  <data name="UseDefaultPolicyDuration" xml:space="preserve">
+    <value>Koristi predefinisano trajanje police?</value>
+  </data>
+  <data name="UserGroups" xml:space="preserve">
+    <value>Korisničke grupe</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="UserPasswordResetSuccess" xml:space="preserve">
+    <value>Nova lozinka je uspješno poslana na korisničku e-mail adresu.</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Korisnici</value>
+  </data>
+  <data name="ValidFrom" xml:space="preserve">
+    <value>Validan od</value>
+  </data>
+  <data name="ValidTo" xml:space="preserve">
+    <value>Validan do</value>
+  </data>
+  <data name="ValidUntil" xml:space="preserve">
+    <value>Važi do</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Verzija</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Vrati</value>
+  </data>
+  <data name="RecordRestoreSuccess" xml:space="preserve">
+    <value>Odabrani zapis je uspješno vraćen.</value>
+  </data>
+  <data name="ShowOnGoogleMaps" xml:space="preserve">
+    <value>Otvori sa Google mapama</value>
+  </data>
+  <data name="Accident" xml:space="preserve">
+    <value>Nesreća</value>
+  </data>
+  <data name="BorderCrossings" xml:space="preserve">
+    <value>Granični prijelaz</value>
+  </data>
+  <data name="FerryTrafic" xml:space="preserve">
+    <value>Trajektni promet</value>
+  </data>
+  <data name="Allergies" xml:space="preserve">
+    <value>Alergija</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Ostalo</value>
+  </data>
+  <data name="RailwayTraffic" xml:space="preserve">
+    <value>Željeznički promet</value>
+  </data>
+  <data name="RoadWorks" xml:space="preserve">
+    <value>Radovi na putu</value>
+  </data>
+  <data name="TrafficFlow" xml:space="preserve">
+    <value>Protok prometa</value>
+  </data>
+  <data name="TrafficForecast" xml:space="preserve">
+    <value>Prometna prognoza</value>
+  </data>
+  <data name="GasStations" xml:space="preserve">
+    <value>Benzinske pumpe</value>
+  </data>
+  <data name="PasswordStrengthInfo" xml:space="preserve">
+    <value>Lozinka mora sadržavati minimalno 6 karaktera i 1 specijalni karakter.</value>
+  </data>
+  <data name="PredefinedPasswordPolicy" xml:space="preserve">
+    <value>Unesite dužinu lozinke i broj specijalnih karaktera.
+Predefinisane vrijednosti su {0} za dužinu i {1} za broj specijalnih karaktera.</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="AddCompany" xml:space="preserve">
+    <value>Dodaj kompaniju</value>
+  </data>
+  <data name="AddStation" xml:space="preserve">
+    <value>Dodaj stanicu</value>
+  </data>
+  <data name="InvalidUrl" xml:space="preserve">
+    <value>Uneseni URL nije validan.</value>
+  </data>
+  <data name="WebAddress" xml:space="preserve">
+    <value>Web adresa</value>
+  </data>
+  <data name="ChooseCompany" xml:space="preserve">
+    <value>Odaberite kompaniju</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>Odaberi datoteku</value>
+  </data>
+  <data name="ChooseFuelType" xml:space="preserve">
+    <value>Odaberite vrstu goriva</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Grad</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Kompanija</value>
+  </data>
+  <data name="FileRequired" xml:space="preserve">
+    <value>Odabir dadoteke je obavezan.</value>
+  </data>
+  <data name="GasCompanies" xml:space="preserve">
+    <value>Kompanije</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="ConfirmSelection" xml:space="preserve">
+    <value>Potvrdi odabir</value>
+  </data>
+  <data name="LogoInfo" xml:space="preserve">
+    <value>Ukoliko ne želite izmijeniti postojeći logo, kliknite dugme Potvrdi. U suprotnom, odaberite novu fotografiju i potvrdite odabir.</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administracija</value>
+  </data>
+  <data name="CategoryI" xml:space="preserve">
+    <value>Kategorija I</value>
+  </data>
+  <data name="CategoryII" xml:space="preserve">
+    <value>Kategorija II</value>
+  </data>
+  <data name="CategoryIII" xml:space="preserve">
+    <value>Kategorija III</value>
+  </data>
+  <data name="CategoryIV" xml:space="preserve">
+    <value>Kategorija IV</value>
+  </data>
+  <data name="ChooseHighway" xml:space="preserve">
+    <value>Odaberite autoput</value>
+  </data>
+  <data name="Highway" xml:space="preserve">
+    <value>Autoput</value>
+  </data>
+  <data name="Highways" xml:space="preserve">
+    <value>Autoputevi</value>
+  </data>
+  <data name="Route" xml:space="preserve">
+    <value>Ruta</value>
+  </data>
+  <data name="Routes" xml:space="preserve">
+    <value>Rute</value>
+  </data>
+  <data name="RowConflict" xml:space="preserve">
+    <value>Identičan zapis već postoji.</value>
+  </data>
+  <data name="Tollbooth" xml:space="preserve">
+    <value>Naplatna kućica</value>
+  </data>
+  <data name="Tollbooths" xml:space="preserve">
+    <value>Naplatne kućice</value>
+  </data>
+  <data name="ChooseCurrency" xml:space="preserve">
+    <value>Odaberite valutu</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="Entrance" xml:space="preserve">
+    <value>Ulaz</value>
+  </data>
+  <data name="EntranceHighway" xml:space="preserve">
+    <value>Autocesta ulaza</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Izlaz</value>
+  </data>
+  <data name="ExitHighway" xml:space="preserve">
+    <value>Autocesta izlaza</value>
+  </data>
+  <data name="Prices" xml:space="preserve">
+    <value>Cijene</value>
+  </data>
+  <data name="ChooseEntrance" xml:space="preserve">
+    <value>Odaberite ulaz</value>
+  </data>
+  <data name="ChooseExit" xml:space="preserve">
+    <value>Odaberite izlaz</value>
+  </data>
+  <data name="EntranceTollbooth" xml:space="preserve">
+    <value>Naplatna kućica - ulaz</value>
+  </data>
+  <data name="ExitTollbooth" xml:space="preserve">
+    <value>Naplatna kućica - Izlaz</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Cijena</value>
+  </data>
+  <data name="PricesRequired" xml:space="preserve">
+    <value>Minimalno jedna cijena kategorije mora biti postavljena.</value>
+  </data>
+  <data name="TollboothConflict" xml:space="preserve">
+    <value>Ulazna i izlazna kućica ne mogu biti iste.</value>
+  </data>
+  <data name="LoginClientIdMissingOrInvalid" xml:space="preserve">
+    <value>ClientId nije prisutan ili nije validan. Akciju logiranja nije moguće nastaviti.</value>
+  </data>
+  <data name="UserNotAuthorizedToAccessResource" xml:space="preserve">
+    <value>Niste autorizovani da pristupite ovoj aplikaciji.</value>
+  </data>
+  <data name="DataLoadError" xml:space="preserve">
+    <value>Došlo je do greške prilikom učitavanja podataka. Molimo pokušajte kasnije.</value>
+  </data>
+  <data name="ShowDeleted" xml:space="preserve">
+    <value>Prikaži izbrisano</value>
+  </data>
+  <data name="OAuthClientIdInactive" xml:space="preserve">
+    <value>OAuth Client Id nije aktivan.</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>Kamera</value>
+  </data>
+  <data name="Cameras" xml:space="preserve">
+    <value>Kamere</value>
+  </data>
+  <data name="OrderNumber" xml:space="preserve">
+    <value>Redni broj</value>
+  </data>
+  <data name="ShowOnMap" xml:space="preserve">
+    <value>Prikaži na mapi</value>
+  </data>
+  <data name="CameraPhotoURL" xml:space="preserve">
+    <value>URL fotografije kamere</value>
+  </data>
+  <data name="MapCoordinatesInputInfo" xml:space="preserve">
+    <value>Odaberite lokaciju na mapi kako bi se automatski popunila polja Geografska širina i dužina. Ukoliko se polja ne popune, odaberite drugo polje ili podatke unesite ručno.</value>
+  </data>
+  <data name="ViewAll" xml:space="preserve">
+    <value>Prikaži sve</value>
+  </data>
+  <data name="HelpRequestNotificationMessage" xml:space="preserve">
+    <value>Korisnik {0} je poslao zahtjev za pomoć.</value>
+  </data>
+  <data name="ArrivalDate" xml:space="preserve">
+    <value>Datum dolaska</value>
+  </data>
+  <data name="ArrivalTime" xml:space="preserve">
+    <value>Vrijeme dolaska</value>
+  </data>
+  <data name="ClientsLanguage" xml:space="preserve">
+    <value>Klijent ima postavljen "{0}" jezik.</value>
+  </data>
+  <data name="CurrentlyActive" xml:space="preserve">
+    <value>Trenutno aktivno</value>
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>Instrukcije</value>
+  </data>
+  <data name="NoResponses" xml:space="preserve">
+    <value>Zahtjev trenutno nema odgovora.</value>
+  </data>
+  <data name="RequestState" xml:space="preserve">
+    <value>Stanje zahtjeva</value>
+  </data>
+  <data name="HigwayRoutePricesNote" xml:space="preserve">
+    <value>U obzir će se uzeti samo kategorije sa postavljenom cijenom.</value>
+  </data>
+  <data name="UrlLink" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="NotificationsNumberInfo" xml:space="preserve">
+    <value>Imate {0} notifikacija.  </value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Notifikacije</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Sadržaj</value>
+  </data>
+  <data name="NoNotifications" xml:space="preserve">
+    <value>Nemate novih notifikacija.</value>
+  </data>
+  <data name="AccountActive" xml:space="preserve">
+    <value>Račun aktivan</value>
+  </data>
+  <data name="ActiveFrom" xml:space="preserve">
+    <value>Aktivna od</value>
+  </data>
+  <data name="ActiveTo" xml:space="preserve">
+    <value>Aktivna do</value>
+  </data>
+  <data name="AddPolicy" xml:space="preserve">
+    <value>Dodaj policu</value>
+  </data>
+  <data name="ChronicDiseases" xml:space="preserve">
+    <value>Kronične bolesti</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>Kontakt osoba</value>
+  </data>
+  <data name="Diagnose" xml:space="preserve">
+    <value>Terapija</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Ime i prezime</value>
+  </data>
+  <data name="HistoryOfCriticalIllness" xml:space="preserve">
+    <value>Povijest kritičnih bolesti</value>
+  </data>
+  <data name="InsurancePolicyNumber" xml:space="preserve">
+    <value>Broj police</value>
+  </data>
+  <data name="Policies" xml:space="preserve">
+    <value>Police</value>
+  </data>
+  <data name="PolicyActiveFrom" xml:space="preserve">
+    <value>Polica aktivna od</value>
+  </data>
+  <data name="PolicyActiveTo" xml:space="preserve">
+    <value>Polica aktivna do</value>
+  </data>
+  <data name="VehicleChassis" xml:space="preserve">
+    <value>Broj šasije</value>
+  </data>
+  <data name="VehicleLicencePlateNumber" xml:space="preserve">
+    <value>Registracijske oznake</value>
+  </data>
+  <data name="ClientLoginData" xml:space="preserve">
+    <value>Povijest logiranja</value>
+  </data>
+  <data name="OAuthClientName" xml:space="preserve">
+    <value>Klijentska aplikacija</value>
+  </data>
+  <data name="TokenExpiresTime" xml:space="preserve">
+    <value>Ističe</value>
+  </data>
+  <data name="TokenIssuedTime" xml:space="preserve">
+    <value>Izdan</value>
+  </data>
+  <data name="LastLoginTime" xml:space="preserve">
+    <value>Posljednji put logiran</value>
+  </data>
+  <data name="PolicyDateConflict" xml:space="preserve">
+    <value>Datum isteka police mora biti ispred današnjeg datuma.</value>
+  </data>
+  <data name="PredefinedPolicyDuration" xml:space="preserve">
+    <value>Predefinisano trajanje police je {0} dana.</value>
+  </data>
+</root>

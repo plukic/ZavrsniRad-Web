@@ -1,0 +1,113 @@
+[ 
+  {
+    "outputFileName": "Content/template/js/admin.min.js",
+    "inputFiles": [
+      "Content/template/js/admin.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/adminlte.min.js",
+    "inputFiles": [
+      "Content/template/js/adminlte.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/bootstrap.min.js",
+    "inputFiles": [
+      "Content/template/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/croppie.min.js",
+    "inputFiles": [
+      "Content/template/js/croppie.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/file-upload.min.js",
+    "inputFiles": [
+      "Content/template/js/file-upload.js"
+    ]
+  },
+  {    
+    "outputFileName": "Content/template/js/jquery.min.js",
+    "inputFiles": [
+      "Content/template/js/jquery.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/jquery.unobtrusive-ajax.min.js",
+    "inputFiles": [
+      "Content/template/js/jquery.unobtrusive-ajax.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/select2.min.js",
+    "inputFiles": [
+      "Content/template/js/select2.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/js/summernote.min.js",
+    "inputFiles": [
+      "Content/template/js/summernote.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery.signalR-2.3.0.min.js",
+    "inputFiles": [
+      "Scripts/jquery.signalR-2.3.0.js"
+    ]
+  },
+  {
+    "inputFiles": [
+      "Content/template/css/adminlte.css"
+    ],
+    "minify": {      
+      "adjustRelativePaths": false
+    },
+    "outputFileName": "Content/template/css/adminlte.min.css"
+  },
+  {
+    "outputFileName": "Content/template/css/bootstrap.min.css",
+    "inputFiles": [
+      "Content/template/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/css/croppie.min.css",
+    "inputFiles": [
+      "Content/template/css/croppie.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/css/fontawesome.min.css",
+    "inputFiles": [
+      "Content/template/css/fontawesome.css"
+    ],
+    "minify": {
+      "adjustRelativePaths": false
+    }
+  },
+  {
+    "outputFileName": "Content/template/css/select2.min.css",
+    "inputFiles": [
+      "Content/template/css/select2.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/css/skinred.min.css",
+    "inputFiles": [
+      "Content/template/css/skinred.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/template/css/summernote.min.css",
+    "inputFiles": [
+      "Content/template/css/summernote.css"
+    ],
+    "minify": {
+      "adjustRelativePaths": false
+    }
+  }
+]

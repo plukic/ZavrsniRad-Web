@@ -1,0 +1,92 @@
+﻿@using System.Web.Mvc
+@using COAssistance.COMMONS.Resources
+
+@*Renders callout element in combination with passed parameters*@
+@helper Callout(string type, string message, string icon)
+{
+    <div class="callout callout-@type">
+        <p>
+            <i class="fa fa-@icon margin-r-5"></i>
+            @message
+        </p>
+    </div>
+}
+
+@*Direct call for callout info*@
+@helper CalloutInfo(string message, string icon = "info-circle")
+{
+    @Callout("info", message, icon)
+}
+
+@*Direct call for callout error*@
+@helper CalloutError(string message, string icon = "times-circle")
+{
+    @Callout("danger", message, icon)
+}
+
+@*Direct call for callout warning*@
+@helper CalloutWarning(string message, string icon = "warning")
+{
+    @Callout("warning", message, icon)
+}
+
+@*Direct call for callout success*@
+@helper CalloutSuccess(string message, string icon = "check")
+{
+    @Callout("success", message, icon)
+}
+
+@helper Paragraph(string type, string message, string icon)
+{
+    <p class="text-@type"><i class="fa fa-@icon margin-r-5"></i>@message</p>
+}
+
+@helper ParagraphInfo(string message, string icon = "info-circle")
+{
+    @Paragraph("info", message, icon)
+}
+
+@helper ParagraphError(string message, string icon = "times-circle")
+{
+    @Paragraph("error", message, icon)
+}
+
+@helper Button(UrlHelper urlHelper, string routeName, string type, string text, string icon)
+{
+    <a href="@urlHelper.RouteUrl(routeName)" class="btn btn-@type btn-flat modal-link">
+        <i class="fa fa-@icon margin-r-5"></i>@text
+    </a>
+}
+@*Direct call for create button*@
+@helper ButtonCreate(UrlHelper urlHelper, string routeName)
+{
+    @Button(urlHelper, routeName, "danger", Resource.Add, "plus-square")
+}
+
+@*Renders "No results" message if collection is empty*@
+@helper NoResults(string text)
+{
+    <div class="clearfix"></div>
+    <p class="text-center no-margin">
+        <i class="fa fa-search margin-r-5"></i>
+        @text
+    </p>
+}
+
+@helper Icon(string title, string icon, string subClass)
+{
+    <span title="@title" class="@subClass"><i class="fa fa-@icon"></i></span>
+}
+
+@helper IconDeleted()
+{
+    @Icon(Resource.Deleted, "trash", "text-error")
+}
+
+@helper GoogleMapsUrl(string linkText, double latitude, double longitude)
+{
+    <p>
+        <i class="fa fa-map-marker margin-r-5"></i>
+        <a target="_blank" href="@($"http://www.google.com/maps/place/{latitude},{longitude}")">@linkText</a>        
+    </p>
+}

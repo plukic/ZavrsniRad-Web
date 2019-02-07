@@ -1,0 +1,36 @@
+
+<log>
+	Date: 8/3/2018 6:36:02 AM
+	Message: The controller for path '/asda/asdas/asdas' was not found or does not implement IController.
+	Details: 
+	Url: /asda/asdas/asdas
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/3/2018 6:36:14 AM
+	Message: The controller for path '/asda/asdas/asdas' was not found or does not implement IController.
+	Details: 
+	Url: /asda/asdas/asdas
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/3/2018 6:38:55 AM
+	Message: The controller for path '/asda/asd' was not found or does not implement IController.
+	Details: 
+	Url: /asda/asd
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/3/2018 6:39:04 AM
+	Message: The controller for path '/asda/asd' was not found or does not implement IController.
+	Details: 
+	Url: /asda/asd
+	User: ::1
+	Browser: Unknown
+</log>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<HelpRequestsModel>
+<div class="navbar-custom-menu">
+    <ul class="nav navbar-nav">
+        <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bell-o"></i>
+                @if (Model.Count() > 0)
+                {
+                    <span class="label label-warning">@Model.Count()</span>
+                }
+            </a>
+            <ul class="dropdown-menu">
+                @if (Model.Count() > 0)
+                {
+                    <li class="header">@string.Format(Resource.NotificationsNumberInfo, Model.Count())</li>
+                    <li>
+                        <ul id="notificationsMenu" class="menu">
+                            @foreach (var notification in Model)
+                            {
+                                <li>
+                                    <a href="@Url.Action("Index", "HelpRequest", new {  helpRequestId = notification.Id })">
+                                        <i class="fa fa-car text-error margin-r-5"></i>
+                                        @string.Format(Resource.HelpRequestNotificationMessage, notification.Client)
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="footer"><a href="@Url.RouteUrl(HelpRequestsRoutes.Index)">@Resource.ViewAll</a></li>
+                }
+                else
+                {
+                    <li class="header">@Resource.NoNotifications</li>
+                }
+            </ul>
+        </li>
+    </ul>
+</div>

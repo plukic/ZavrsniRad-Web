@@ -1,0 +1,9 @@
+
+<log>
+	Date: 8/7/2018 12:27:54 PM
+	Message: C:\Users\Monika\Source\Repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Details.cshtml(59): error CS0117: 'Common' does not contain a definition for 'GetIcon'
+	Details: 
+	Url: /help-requests/details/1/
+	User: ::1
+	Browser: Chrome
+</log>

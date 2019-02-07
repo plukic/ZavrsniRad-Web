@@ -1,0 +1,91 @@
+﻿@model HelpRequestResponseCreateModel
+
+@using (Html.BeginForm("CreateResponse", "HelpRequest", FormMethod.Post, new { id = "formb" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.HelpRequestId)
+    @Html.HiddenFor(m => m.Language)    
+    @Html.ValidationSummaryWithCheck(true)    
+    <div class="form-group">
+        @Html.LabelRequiredFor(m => m.HelpRequestState, new { @class = "text-error margin-l-2" })
+        @Html.TextBoxFor(e => e.HelpRequestState, new { @class = "form-control", placeholder = Resource.Name })
+        @Html.ValidationMessageFor(m => m.HelpRequestState, string.Empty, new { @class = "text-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelRequiredFor(m => m.ExpirationDateUtc, new { @class = "text-error margin-l-2" })
+        @Html.EditorFor(e => e.ExpirationDateUtc, new { htmlAttributes = new { @class = "form-control", placeholder = Resource.ArrivalDate } })
+        @Html.ValidationMessageFor(m => m.ExpirationDateUtc, string.Empty, new { @class = "text-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelRequiredFor(m => m.ExpirationTime, new { @class = "text-error margin-l-2" })
+        @Html.EditorFor(e => e.ExpirationTime, new { htmlAttributes = new { @class = "form-control", placeholder = Resource.ArrivalTime } })
+        @Html.ValidationMessageFor(m => m.ExpirationTime, string.Empty, new { @class = "text-error" })
+    </div>
+    @ViewHelpers.ParagraphInfo(string.Format(Resource.ClientsLanguage, Model.Language))
+    <div class="form-group">
+        @Html.LabelRequiredFor(m => m.LanguageId, new { @class = "text-error margin-l-2" })
+        @Html.DropDownListFor(m => m.LanguageId, Model.Languages, Resource.ChooseLanguage, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LanguageId, string.Empty, new { @class = "text-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelRequiredFor(m => m.ShortInstruction, new { @class = "text-error margin-l-2" })
+        @for (int i = 0; i < Model.InstructionTemplates.Count(); i++)
+        {
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsTemplate" value="@Model.InstructionTemplates[i].Text">
+                    @Model.InstructionTemplates[i].Text.SubstringWords(12)
+                </label>
+            </div>
+        }
+        @Html.TextAreaFor(e => e.ShortInstruction, 5, 5, new { @class = "form-control", placeholder = Resource.Instruction })
+        @Html.ValidationMessageFor(m => m.ShortInstruction, string.Empty, new { @class = "text-error" })
+    </div>
+    <button id="responseSubmit" class="btn btn-danger pull-right btn-flat">@Resource.Submit</button>
+    <script>
+        $('input[type=radio][name=optionsTemplate]').on('change', function () {
+            $('#@Html.FieldIdFor(m => m.ShortInstruction)').text($(this).val());
+        });
+
+        $('#responseSubmit').click(function () {
+            var form = $(AHelper.formbKey);
+
+            jqxhr = $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: form.serialize(),
+                cache: false,
+                beforeSend: function () {
+                    form.find('.btn-danger')
+                        .prop('disabled', true)
+                        .html('<i class="fa fa-life-ring fa-spin"></i>');
+                },
+                success: function (response) {
+                    if (response.Type === 'success') {
+                        AHelper.displayNotification(response.Text, response.Type);
+                        AHelper.loadData(response.RedirectUrl, $('#existingResponsesBlock'));
+
+                        form.find('.btn-danger').prop('disabled', false).html('@Resource.Submit');
+
+                        $(':input', AHelper.formbKey)
+                            .not(':button, :submit, :reset, :hidden')
+                            .removeAttr('checked')
+                            .removeAttr('selected');
+
+                    } else {
+                        $("#responseBlock").html(response);
+                    }
+                },
+                fail: function (response) {
+                    if (response.responseJSON.RedirectUrl) {
+                        window.location.href = response.responseJSON.RedirectUrl;
+                    }
+                    AHelper.displayNotification(response.responseJSON.Text, response.responseJSON.Type);
+                    AHelper.showLoader(false);
+                }
+            });
+
+            return false;
+        });
+    </script>
+}

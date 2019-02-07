@@ -1,0 +1,175 @@
+
+<log>
+	Date: 11/15/18 11:26:31
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\Client\_Create.cshtml(33): error CS1061: 'ClientCreateModel' does not contain a definition for 'InsurancePolicyNumber' and no extension method 'InsurancePolicyNumber' accepting a first argument of type 'ClientCreateModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /clients/create/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:27:07
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\Client\_Create.cshtml(54): error CS1061: 'ClientCreateModel' does not contain a definition for 'VehicleLicencePlateNumber' and no extension method 'VehicleLicencePlateNumber' accepting a first argument of type 'ClientCreateModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /clients/create/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:41:17
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:41:28
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:41:34
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:42:24
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:42:34
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:42:46
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:43:01
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:43:41
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:44:11
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:46:06
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:46:30
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:47:42
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:48:57
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:50:38
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 11:51:02
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Responses.cshtml(20): error CS1061: 'HelpRequestResponseModel' does not contain a definition for 'ExpirationDate' and no extension method 'ExpirationDate' accepting a first argument of type 'HelpRequestResponseModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /help-requests/1/responses/?Id=1
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 13:56:47
+	Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.IEnumerable`1[COAssistance.COMMONS.Models.HelpRequests.HelpRequestsModel]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+	Details: 
+	Url: /notifications/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 11/15/18 13:56:47
+	Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.IEnumerable`1[COAssistance.COMMONS.Models.Staff.StaffModel]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+	Details: 
+	Url: /staff/data/
+	User: ::1
+	Browser: Chrome
+</log>

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<EmergencyContactNumberModel>
+<div class="box no-border">
+    <div class="box-header">
+        <h3 class="box-title">@Resource.EmergencyContactPhoneNumber</h3>
+    </div>
+    <div class="box-body">
+        @if (Model.Any())
+        {
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>@Resource.ContactPerson</th>
+                        <th>@Resource.PhoneNumber</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ContactFullName</td>
+                            <td>@item.PhoneNumber</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            @ViewHelpers.NoResults(Resource.NoItems)
+        }
+    </div>
+</div>

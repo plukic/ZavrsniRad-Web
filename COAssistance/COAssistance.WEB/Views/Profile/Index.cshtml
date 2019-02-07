@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.PageTitle = Resource.Profile;
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                @ViewHelpers.Button(this.Url, ProfileRoutes.ChangePassword, "danger", Resource.ChangePassword, "key")                
+            </div>
+            <div id="dataTarget" class="box-body">
+                @Ajax.JavaScriptActionAsync("AHelper.loadData", Url.RouteUrl(ProfileRoutes.Data))                
+            </div>
+        </div>
+    </div>
+</div>

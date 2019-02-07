@@ -1,0 +1,108 @@
+
+<log>
+	Date: 8/23/2018 7:15:39 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Details.cshtml(59): error CS0117: 'Common' does not contain a definition for 'GetIcon'
+	Details: 
+	Url: /help-requests/details/74/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 7:17:57 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\HelpRequest\_Details.cshtml(59): error CS0117: 'Common' does not contain a definition for 'GetIcon'
+	Details: 
+	Url: /help-requests/details/74/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:50:18 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:52:14 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:53:07 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:53:09 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:53:22 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:53:46 AM
+	Message: Object reference not set to an instance of an object.
+	Details: 
+	Url: /gas-stations/data/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:56:44 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\GasCompany\_CreateLogo.cshtml(21): error CS1061: 'GasCompanyCreateLogoViewModel' does not contain a definition for 'IsEditMode' and no extension method 'IsEditMode' accepting a first argument of type 'GasCompanyCreateLogoViewModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /gas-companies/create/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:57:20 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\GasCompany\_CreateLogo.cshtml(21): error CS1061: 'GasCompanyCreateLogoViewModel' does not contain a definition for 'IsEditMode' and no extension method 'IsEditMode' accepting a first argument of type 'GasCompanyCreateLogoViewModel' could be found (are you missing a using directive or an assembly reference?)
+	Details: 
+	Url: /gas-companies/create/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:57:38 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\GasStation\_Create.cshtml(63): error CS0117: 'Common' does not contain a definition for 'GetIcon'
+	Details: 
+	Url: /gas-stations/create/
+	User: ::1
+	Browser: Chrome
+</log>
+
+<log>
+	Date: 8/23/2018 8:57:44 AM
+	Message: C:\Users\Monika\source\repos\COAssistance\COAssistance\COAssistance.WEB\Views\GasStation\_Create.cshtml(63): error CS0117: 'Common' does not contain a definition for 'GetIcon'
+	Details: 
+	Url: /gas-stations/create/
+	User: ::1
+	Browser: Chrome
+</log>

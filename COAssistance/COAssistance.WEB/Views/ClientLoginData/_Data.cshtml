@@ -1,0 +1,53 @@
+﻿@model IEnumerable<COAssistance.COMMONS.Clients.ClientLoginData>
+
+<div class="box no-border">
+    <div class="box-header">
+        <h3 class="box-title">@Resource.ClientLoginData</h3>
+    </div>
+    <div class="box-body">
+        @if (Model.Any())
+        {
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>@Resource.OAuthClientName</th>
+                    <th>@Resource.TokenIssuedTime</th>
+                    <th>@Resource.TokenExpiresTime</th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.OAuthClient</td>
+                        <td>@item.Issued.ToLocalTimeWithFormat(DateTimeFormat.DateTime)</td>
+                        <td>@item.Expires.ToLocalTimeWithFormat(DateTimeFormat.DateTime)</td>
+
+                        <td>
+
+                            <ul>
+                                <li>
+                                    <a title="@Resource.Deactivate"
+                                       class="modal-link text-error"
+                                       href="@Url.RouteUrl(CommonRoutes.Confirmation,new { id= item.TokenId,routeName = ClientLoginDataRoutes.Deactivate,updateTargetId="clientlogindata",
+                                            additionalData =item.UserId})">
+                                        <i class="fa fa-power-off"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        }
+        else
+        {
+            @ViewHelpers.NoResults(Resource.NoItems)
+        }
+    </div>
+</div>

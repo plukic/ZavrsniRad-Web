@@ -1,0 +1,9 @@
+
+<log>
+	Date: 08.08.2018. 08:50:16
+	Message: One or more errors occurred.
+	Details: The model backing the 'COAssistanceDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+	Url: /coa/token
+	User: ::1
+	Browser: Unknown
+</log>
